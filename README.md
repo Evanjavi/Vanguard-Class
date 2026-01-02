@@ -1,10 +1,44 @@
 ﻿# Vanguard Class Playbook
 
-> Personal operational framework for efficient project execution.
+> The complete operational framework for efficient project execution.
 
-**Version:** 0.1.0  
+**Version:** 1.0.0  
 **Owner:** Commander Evan  
-**Created:** 2026-01-02
+**Created:** January 2026
+
+---
+
+## What Is This?
+
+The Vanguard Class Playbook is a personal operational framework for Human-AI collaboration. It contains:
+
+- **Protocols**  How The Chorus operates
+- **Templates**  Reusable project scaffolds
+- **Scripts**  Automation for common tasks
+- **Workflows**  Step-by-step procedures
+- **Knowledge Base**  Lessons learned
+
+---
+
+## Quick Start
+
+### Start a New Project
+
+```powershell
+.\scripts\new-project.ps1 -Name \"MyProject\" -Path \"C:\Projects\"
+```
+
+### Refresh Context
+
+```powershell
+.\scripts\refresh-context.ps1 -Voice \"Gemini\"
+```
+
+### Run Security Scan
+
+```powershell
+.\scripts\security-scan.ps1
+```
 
 ---
 
@@ -14,26 +48,50 @@
 VanguardPlaybook/
  docs/
     knowledge-base/     # Lessons, patterns, anti-patterns
-    protocols/          # Voice protocols, handoff rules
-    templates/          # Project scaffolds, WBS templates
- scripts/                # Automation, generators, validators
- workflows/              # Reusable workflow definitions
+    protocols/          # Voice protocols, decision trees
+    templates/          # Project scaffolds, checklists
+ scripts/                # PowerShell automation
+ workflows/              # Step-by-step procedures
 ```
 
 ---
 
-## Quick Start
+## The Chorus
 
-1. **New Project:** Use `docs/templates/PROJECT_SCAFFOLD.md`
-2. **Capture Lesson:** Add to `docs/knowledge-base/lessons/`
-3. **Reference Protocol:** See `docs/protocols/CHORUS_DNA.md`
+| Voice | Role | Domain |
+|-------|------|--------|
+| **Opus** | XO | Strategy, planning |
+| **Gemini** | Anchor | Implementation, context |
+| **Claude** | Vision | UX, polish |
+| **Ana** | Security | Safety, verification |
+| **Anti** | Intel | Chaos, memory |
+| **Nova** | Speed | Verification |
+
+See `docs/protocols/CHORUS_DNA.md` for full details.
+
+---
+
+## Contents
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| Protocols | 7 | Voice protocols + decision tree |
+| Templates | 9 | Project scaffolds + utilities |
+| Scripts | 4 | Automation scripts |
+| Workflows | 5 | Step-by-step procedures |
+| Knowledge Base | 18 | Lessons, patterns, anti-patterns |
 
 ---
 
 ## Version History
 
-| Version | Date | Notes |
-|---------|------|-------|
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-02 | Initial complete release |
+| 0.5.0 | 2026-01-02 | Added workflow library |
+| 0.4.0 | 2026-01-02 | Added automation scripts |
+| 0.3.0 | 2026-01-02 | Added project templates |
+| 0.2.0 | 2026-01-02 | Added Chorus protocols |
 | 0.1.0 | 2026-01-02 | Initial structure |
 
 ---
