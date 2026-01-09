@@ -1,0 +1,193 @@
+{
+  // ============================================
+  // CHORUS WORKFLOW CONFIGURATION
+  // Todo Tree + Task ID Recognition
+  // ============================================
+
+  // Task ID pattern recognition
+  "todo-tree.general.tags": [
+    // Phase task codes (your format: [phase][voice][task])
+    "ag",
+    "bg",
+    "cg",
+    "dg", // Gemini tasks
+    "aa",
+    "ba",
+    "ca",
+    "da", // Ana tasks
+    "ac",
+    "bc",
+    "cc",
+    "dc", // Claude tasks
+    "an",
+    "bn",
+    "cn",
+    "dn", // Nova tasks
+    "ax",
+    "bx",
+    "cx",
+    "dx", // Anti tasks
+    "ao",
+    "bo",
+    "co",
+    "do", // Opus tasks
+    // Standard markers
+    "TODO",
+    "FIXME",
+    "HACK",
+    "BUG",
+    // Chorus markers
+    "BLOCKED",
+    "REVIEW",
+    "HANDOFF"
+  ],
+
+  // Tag styling for visual distinction
+  "todo-tree.highlights.customHighlight": {
+    // Gemini (Blue - Builder)
+    "ag": { "icon": "tools", "foreground": "#3B82F6", "iconColour": "#3B82F6" },
+    "bg": { "icon": "tools", "foreground": "#3B82F6", "iconColour": "#3B82F6" },
+    "cg": { "icon": "tools", "foreground": "#3B82F6", "iconColour": "#3B82F6" },
+    "dg": { "icon": "tools", "foreground": "#3B82F6", "iconColour": "#3B82F6" },
+
+    // Ana (Red - Security)
+    "aa": {
+      "icon": "shield",
+      "foreground": "#EF4444",
+      "iconColour": "#EF4444"
+    },
+    "ba": {
+      "icon": "shield",
+      "foreground": "#EF4444",
+      "iconColour": "#EF4444"
+    },
+    "ca": {
+      "icon": "shield",
+      "foreground": "#EF4444",
+      "iconColour": "#EF4444"
+    },
+    "da": {
+      "icon": "shield",
+      "foreground": "#EF4444",
+      "iconColour": "#EF4444"
+    },
+
+    // Claude (Purple - Beauty)
+    "ac": {
+      "icon": "paintbrush",
+      "foreground": "#A855F7",
+      "iconColour": "#A855F7"
+    },
+    "bc": {
+      "icon": "paintbrush",
+      "foreground": "#A855F7",
+      "iconColour": "#A855F7"
+    },
+    "cc": {
+      "icon": "paintbrush",
+      "foreground": "#A855F7",
+      "iconColour": "#A855F7"
+    },
+    "dc": {
+      "icon": "paintbrush",
+      "foreground": "#A855F7",
+      "iconColour": "#A855F7"
+    },
+
+    // Nova (Yellow - Speed)
+    "an": { "icon": "zap", "foreground": "#EAB308", "iconColour": "#EAB308" },
+    "bn": { "icon": "zap", "foreground": "#EAB308", "iconColour": "#EAB308" },
+    "cn": { "icon": "zap", "foreground": "#EAB308", "iconColour": "#EAB308" },
+    "dn": { "icon": "zap", "foreground": "#EAB308", "iconColour": "#EAB308" },
+
+    // Anti (Cyan - Memory)
+    "ax": {
+      "icon": "database",
+      "foreground": "#06B6D4",
+      "iconColour": "#06B6D4"
+    },
+    "bx": {
+      "icon": "database",
+      "foreground": "#06B6D4",
+      "iconColour": "#06B6D4"
+    },
+    "cx": {
+      "icon": "database",
+      "foreground": "#06B6D4",
+      "iconColour": "#06B6D4"
+    },
+    "dx": {
+      "icon": "database",
+      "foreground": "#06B6D4",
+      "iconColour": "#06B6D4"
+    },
+
+    // Opus (Violet - Strategy)
+    "ao": {
+      "icon": "compass",
+      "foreground": "#8B5CF6",
+      "iconColour": "#8B5CF6"
+    },
+    "bo": {
+      "icon": "compass",
+      "foreground": "#8B5CF6",
+      "iconColour": "#8B5CF6"
+    },
+    "co": {
+      "icon": "compass",
+      "foreground": "#8B5CF6",
+      "iconColour": "#8B5CF6"
+    },
+    "do": {
+      "icon": "compass",
+      "foreground": "#8B5CF6",
+      "iconColour": "#8B5CF6"
+    },
+
+    // Special markers
+    "BLOCKED": {
+      "icon": "stop",
+      "foreground": "#DC2626",
+      "iconColour": "#DC2626"
+    },
+    "REVIEW": {
+      "icon": "eye",
+      "foreground": "#F59E0B",
+      "iconColour": "#F59E0B"
+    },
+    "HANDOFF": {
+      "icon": "arrow-right",
+      "foreground": "#10B981",
+      "iconColour": "#10B981"
+    }
+  },
+
+  // Regex for matching task codes with numbers (e.g., bg1, bg2, ba1)
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)\\d*)",
+
+  // Include markdown files for task visibility
+  "todo-tree.filtering.includeGlobs": [
+    "**/*.md",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.css"
+  ],
+
+  // Show in sidebar
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.groupedByTag": true,
+
+  // ============================================
+  // MARKDOWN PREVIEW ENHANCED
+  // ============================================
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "monokai.css",
+
+  // ============================================
+  // PROJECT MANAGER
+  // ============================================
+  "projectManager.git.baseFolders": ["C:\\Users\\evanj\\OneDrive\\Desktop"],
+  "projectManager.sortList": "Recent"
+}
