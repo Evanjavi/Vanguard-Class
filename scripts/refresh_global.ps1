@@ -25,6 +25,7 @@ switch ($Voice) {
 
 Write-Host "--- [CENTRAL COMMAND] Vanguard Class v2.0 ---" -ForegroundColor Cyan
 Write-Host "Voice: $Voice | Required Model Family: $ModelFamily" -ForegroundColor Magenta
+Write-Host "Model Alignment Check: [ ] Verify you are using $ModelFamily" -ForegroundColor Yellow
 Write-Host "-------------------------------------------------" -ForegroundColor Gray
 
 # --- 1. Global Context Loading (VanguardPlaybook) ---

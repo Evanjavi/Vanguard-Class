@@ -81,6 +81,9 @@
 1.  **Strict Handoffs:** Do not move to Phase 5 until Phase 3 (Tasking) is complete.
 2.  **Dual Broadcast Check:** Phase 2 (Align) MUST check both Global and Mission broadcasts.
 3.  **Terminal First:** Phase 5 (Execute) verifies via terminal before Phase 6 (Consolidate).
+4.  **Same-Agent Parallelism:** Voices sharing the same Model Agent (Standard + Prime) may execute in parallel.
+    - _Example:_ Atlas (Standard) + Atlas Prime (Invariant) = ✅ Parallel
+    - _Example:_ Gemini (Standard) + Claude (Standard) = ❌ Sequential (Must switch agent)
 
 ---
 
