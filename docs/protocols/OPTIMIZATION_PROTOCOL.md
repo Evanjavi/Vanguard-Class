@@ -150,6 +150,7 @@ task  = number (1, 2, 3...)
 - **Parallel blocks** — `⇄` indicates simultaneous execution
 - **Locks section** — Prevents file collision
 - **Notes section** — Async communication between voices
+- **Session Odometer** — Timestamp-based health signal
 
 ### task.md Structure
 
@@ -157,10 +158,22 @@ task  = number (1, 2, 3...)
 # 🎯 [Sprint Name]
 
 **Sprint:** [Description] | **Phase:** [1-7] ([PHASE NAME])  
-**Last:** [ISO Timestamp] by [Voice]
+**Last:** [ISO Timestamp] by [Voice] | [Signal] [Status]
 
 ---
+```
 
+#### The Signal Protocol (Session Odometer)
+
+Anti owns this signal. Updates occur in Phase 4 (PREPARE) and Phase 6 (CONSOLIDATE).
+
+| Signal | Condition                  | Status   | Action                 |
+| :----- | :------------------------- | :------- | :--------------------- |
+| 🟢     | < 30 min since last update | Fresh    | Full speed             |
+| 🟡     | 30-60 min                  | Heavy    | Consider refinery pass |
+| 🔴     | > 60 min                   | Critical | Refresh recommended    |
+
+```markdown
 ## Phase [X] — [Phase Name]
 
 **🔵 Gemini**

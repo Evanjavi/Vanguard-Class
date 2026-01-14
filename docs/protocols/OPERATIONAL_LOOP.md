@@ -4,6 +4,7 @@
 
 **Purpose:** The 7-phase cycle that governs all Chorus operations. Every sprint follows this loop.
 **Status:** Doctrine (Immutable)
+**Version:** 4.0 (2026-01-13)
 
 ---
 
@@ -24,161 +25,62 @@
 
 ## Phase Definitions
 
-### Phase 1: STRATEGIZE
+### Phase 1: STRATEGIZE (Plan)
 
-**Owner:** Opus (XO)
-**Purpose:** Define what we are building and why.
+**Owner:** Opus (Strategy)
+**Input:** User Request (Commander)
+**Action:** Define the "What" and "Why".
+**Output:** Updated `implementation_plan.md` (Strategy Section).
 
-| Entry                      | Exit                          |
-| :------------------------- | :---------------------------- |
-| Commander states objective | Strategic decision documented |
+### Phase 2: ALIGN (Broadcast)
 
-**Artifacts Produced:**
+**Owner:** Anti (Memory)
+**Input:** Implementation Plan
+**Action:** Check for conflicts with Global Law (`VanguardPlaybook/BROADCAST.md`) and Project Strategy (`[Project]/.antigravity/BROADCAST.md`).
+**Output:** Alignment verified. Pivots documented in Project Broadcast if needed.
 
-- `DECISION_{topic}.md` — Strategic ruling with rationale
-- Updated `WBS.md` — High-level task breakdown
+### Phase 3: ASSIGN (Task)
 
-**Protocol:** OPUS_PROTOCOL §Decision Capture
+**Owner:** Opus (Strategy)
+**Input:** Aligned Plan
+**Action:** Break down plan into atomic tasks. Assign to Voices.
+**Output:** Updated `task.md` with Task Codes (e.g., `bg1`, `co2`).
 
----
+### Phase 4: PREPARE (Context)
 
-### Phase 2: ALIGN
+**Owner:** Anti (Memory)
+**Input:** Task Codes
+**Action:** Load context. Ensure Identity Discipline.
+**Output:** Voice ready to execute (e.g., "Anti, Expecting orders").
 
-**Owner:** The Chorus (Collaborative)
-**Purpose:** Ensure all voices agree on approach before work begins.
+### Phase 5: EXECUTE (Build)
 
-| Entry            | Exit                                     |
-| :--------------- | :--------------------------------------- |
-| Strategy defined | Consensus reached (or 3-Loop escalation) |
+**Owner:** Gemini (Builder) / Claude (Artist) / Nova (Speed)
+**Input:** Task Codes (e.g., "Gemini, bg1-bg3")
+**Action:** Write code. Verify via **Terminal-First** standard.
+**Output:** Code changes. Tests passed. `task.md` checkboxes marked.
 
-**Artifacts Produced:**
+### Phase 6: CONSOLIDATE (Verify)
 
-- `implementation_plan.md` — Technical approach
+**Owner:** Ana (Security) / Nova (QA)
+**Input:** Completed Tasks
+**Action:** Security Audit (`/security-scan`). E2E Verification.
+**Output:** Security Sign-off. Stable Branch.
 
-**Protocol:** OPTIMIZATION_PROTOCOL §9 (3-Loop Rule)
+### Phase 7: REFLECT (Distill)
 
-> If the Chorus circles the same question **3 times** without resolution, Opus escalates to Commander.
-
----
-
-### Phase 3: ASSIGN
-
-**Owner:** Opus (XO)
-**Purpose:** Allocate tasks to voices based on strengths.
-
-| Entry         | Exit                          |
-| :------------ | :---------------------------- |
-| Plan approved | All tasks assigned with codes |
-
-**Artifacts Produced:**
-
-- Task codes assigned (`[phase][voice][task]` format)
-
-**Protocol:** OPTIMIZATION_PROTOCOL §12 (Task Coding)
+**Owner:** Opus (Strategy) / Anti (Memory)
+**Input:** Completed Sprint
+**Action:** Update `THE_BOOK.md`. Archive old tasks. Update Playbook if new patterns emerge.
+**Output:** Clean state for next loop.
 
 ---
 
-### Phase 4: PREPARE
+## Execution Rules
 
-**Owner:** Anti (Oracle)
-**Purpose:** Write execution orders and verify security.
-
-| Entry          | Exit                                            |
-| :------------- | :---------------------------------------------- |
-| Tasks assigned | `ACTIVE_ORDERS.md` written and security-cleared |
-
-**Artifacts Produced:**
-
-- `ACTIVE_ORDERS.md` — Work orders per voice with Section 11 compliance
-- `COMPLETION_LOG.md` — Empty template ready for entries
-
-**Protocol:** OPTIMIZATION_PROTOCOL §10 (Secrets Firewall)
-
-> Scan for credentials before writing orders. Block if detected.
-
----
-
-### Phase 5: EXECUTE
-
-**Owner:** All Voices (Parallel)
-**Purpose:** Build the thing.
-
-| Entry          | Exit                     |
-| :------------- | :----------------------- |
-| Orders written | All tasks marked ✅ DONE |
-
-**Artifacts Produced:**
-
-- Code deliverables per task
-- Completion entries in `COMPLETION_LOG.md`
-
-**Protocol:** VOICE_PROTOCOLS §Phase 5 (2-Doc System)
-
-**Flow:**
-
-1. Read `ACTIVE_ORDERS.md`
-2. Find your section
-3. Execute in sequence
-4. Append to `COMPLETION_LOG.md`
-5. Report: "[Voice], orders complete."
-
----
-
-### Phase 6: CONSOLIDATE
-
-**Owner:** Ana (Security) + Anti (Oracle)
-**Purpose:** Audit, verify, and package.
-
-| Entry          | Exit                                       |
-| :------------- | :----------------------------------------- |
-| All tasks done | Security sign-off + artifacts consolidated |
-
-**Artifacts Produced:**
-
-- Security audit sign-off
-- Updated `CHORUS_STATE.md`
-
-**Protocol:** OPTIMIZATION_PROTOCOL §11 (Ana's Checkpoint)
-
-**Ana verifies:**
-
-- [ ] No credentials leaked in completion notes
-- [ ] All security tasks have explicit sign-off
-
----
-
-### Phase 7: REFLECT
-
-**Owner:** Opus (XO)
-**Purpose:** Capture lessons and update the knowledge base.
-
-| Entry               | Exit                              |
-| :------------------ | :-------------------------------- |
-| Sprint consolidated | Lessons documented, loop complete |
-
-**Artifacts Produced:**
-
-- `THE_BOOK.md` entry (if significant learning)
-- `knowledge-base/lessons/` entry (if pattern discovered)
-- `walkthrough.md` — Proof of work with screenshots
-
-**Protocol:** GEMINI_PROTOCOL §Archivist
-
-> At Version End, distill lessons to knowledge-base.
-
----
-
-## Quick Reference
-
-| Phase | Name        | Owner    | Key Artifact             |
-| :---- | :---------- | :------- | :----------------------- |
-| 1     | STRATEGIZE  | Opus     | `DECISION_{topic}.md`    |
-| 2     | ALIGN       | Chorus   | `implementation_plan.md` |
-| 3     | ASSIGN      | Opus     | Task codes               |
-| 4     | PREPARE     | Anti     | `ACTIVE_ORDERS.md`       |
-| 5     | EXECUTE     | All      | `COMPLETION_LOG.md`      |
-| 6     | CONSOLIDATE | Ana/Anti | Security sign-off        |
-| 7     | REFLECT     | Opus     | `THE_BOOK.md`            |
+1.  **Strict Handoffs:** Do not move to Phase 5 until Phase 3 (Tasking) is complete.
+2.  **Dual Broadcast Check:** Phase 2 (Align) MUST check both Global and Mission broadcasts.
+3.  **Terminal First:** Phase 5 (Execute) verifies via terminal before Phase 6 (Consolidate).
 
 ---
 

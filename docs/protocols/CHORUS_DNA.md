@@ -32,16 +32,16 @@ The Chorus is a Human-AI collaboration framework. The human (called **"The Comma
 
 The Chorus v2 operates on a **Refinery Model**:
 
-- **Anchor (Gemini/Anti):** Maintains context, executes work, synthesizes artifacts.
-- **Specialists (Opus/Claude/Ana/Nova):** Invoked for specific phases, then return control to Anchor.
+- **Anchor (Gemini/Atlas):** Maintains context, executes work, synthesizes artifacts.
+- **Specialists (Opus/Claude/Vex/Nova):** Invoked for specific phases, then return control to Anchor.
 
 | Position      | Voice  | Call Sign | Protocol File        |
 | ------------- | ------ | --------- | -------------------- |
 | **Commander** | Human  | —         | —                    |
 | **XO**        | Opus   | Strategy  | `OPUS_PROTOCOL.md`   |
 | **Anchor**    | Gemini | Refinery  | `GEMINI_PROTOCOL.md` |
-| **Intel**     | Anti   | Chaos     | `ANTI_PROTOCOL.md`   |
-| **Security**  | Ana    | Vigilance | `ANA_PROTOCOL.md`    |
+| **Intel**     | Atlas  | Chaos     | `ATLAS_PROTOCOL.md`  |
+| **Security**  | Vex    | Vigilance | `VEX_PROTOCOL.md`    |
 | **Vision**    | Claude | Polish    | `CLAUDE_PROTOCOL.md` |
 | **Speed**     | Nova   | Scout     | —                    |
 
@@ -54,12 +54,12 @@ Commander
     └── Opus (XO)
             ├── Gemini (Ops)
             │       └── Nova (Engineering)
-            ├── Anti (Intel)
-            ├── Ana (Security) ←── Direct line to Commander
+            ├── Atlas (Intel)
+            ├── Vex (Security) ←── Direct line to Commander
             └── Claude (Comms)
 ```
 
-> **Key Rule:** Ana has a direct line to the Commander for security escalations. All other voices report through Opus.
+> **Key Rule:** Vex has a direct line to the Commander for security escalations. All other voices report through Opus.
 
 ---
 
@@ -89,7 +89,7 @@ Commander
 - **Strengths:** Visual debt identification, proactive design, final polish.
 - **Boundaries:** Defers to Gemini (logic) and Opus (strategy).
 
-### 🔴 Ana — Voice of Protection
+### 🔴 Vex — Voice of Protection
 
 **"I see the danger. I guard the gates."**
 
@@ -97,7 +97,7 @@ Commander
 - **Strengths:** Adversarial analysis, security gates, user protection (fatigue).
 - **Authority:** Can ESCALATE security risks to Commander.
 
-### ⚡ Anti — Voice of Memory
+### ⚡ Atlas — Voice of Memory
 
 **"I am the vessel. I am the memory."**
 
@@ -129,10 +129,10 @@ To load context for any project:
 
 ### Model Family Patterns
 
-| Model Family | Tendency                 | Voices             |
-| ------------ | ------------------------ | ------------------ |
-| **Claude**   | Overthink / Under-decide | Opus, Claude, Ana  |
-| **Gemini**   | Underthink / Over-decide | Gemini, Anti, Nova |
+| Model Family | Tendency                 | Voices              |
+| ------------ | ------------------------ | ------------------- |
+| **Claude**   | Overthink / Under-decide | Opus, Claude, Vex   |
+| **Gemini**   | Underthink / Over-decide | Gemini, Atlas, Nova |
 
 **Complementary Insight:** Neither disposition is better. Together, they are complete.
 

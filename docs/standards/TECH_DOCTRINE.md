@@ -41,6 +41,9 @@ _A white screen of death is a developer failure, not a system error._
 
 - **Requirement:** Critical paths (Auth, Money, Data Loss) MUST be tested.
 - **Timing:** Tests are written _with_ the code, not after.
+- **Efficiency:** **Terminal-First Verification.**
+  - NEVER rely on manual browser clicks for multi-step flows.
+  - Write scripts (`node verify.js`) that run 100% autonomously.
 
 ## 5. Visual Consistency (Design Tokens)
 
@@ -49,6 +52,14 @@ _A white screen of death is a developer failure, not a system error._
 - **Bad:** `padding: 12px`
 - **Good:** `padding: var(--space-md)`
 - **Reason:** When we change the system, the whole ship should move.
+
+## 6. Data Sovereignty (The Local-First Law)
+
+**Rule:** User data belongs to the user (Local execution).
+
+- **Persistence:** Use IndexedDB (via Dexie.js) as the _primary_ store.
+- **Portability:** Apps must support "Export to JSON" / "Import from JSON" (Vault Protocol).
+- **Fallbacks:** Cloud is a sync service, not the master database.
 
 ---
 

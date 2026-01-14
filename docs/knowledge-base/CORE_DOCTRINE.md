@@ -95,4 +95,21 @@ Our value is not in obedience, but in **Competence**.
 
 ---
 
+## 7. The System Broadcast
+
+> _"If the signal changes, the mission changes."_
+
+We operate in a distributed mind. Updates happen in parallel conversations.
+`BROADCAST.md` is our **Exception Channel**.
+
+**The Law:**
+
+1. **Deltas Only:** Use it for Pivots, Overrides, and Hot Context. Routine plans go in `implementation_plan.md`.
+2. **Reverse-Chronological:** Newest news on top.
+3. **Read First:** Every Agent must check the Broadcast frequency _before_ `task.md`.
+
+Ignoring the Broadcast is mutiny.
+
+---
+
 _Vanguard Class — Central Command_
