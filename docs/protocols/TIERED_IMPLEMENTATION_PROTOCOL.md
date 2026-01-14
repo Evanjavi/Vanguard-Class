@@ -59,7 +59,7 @@ When urgency demands quick wins:
 - Standard UI components (lists, forms, modals)
 - Business logic
 
-**Audit By:** Claude Prime + Vex Prime + Nova Prime
+**Audit By:** Claude Prime + Vex Prime + Flash Prime
 
 **Owner:** Gemini Standard (The Architect)
 
@@ -71,7 +71,7 @@ When urgency demands quick wins:
 
 - **Security** (encryption, auth, validation) → Vex Standard
 - **Premium UX** (animations, polish) → Claude Standard
-- **Infrastructure** (CI/CD, deploy) → Nova Standard
+- **Infrastructure** (CI/CD, deploy) → Flash Standard
 
 **Why Specialist:** Implementation IS the spec. Intuition matters.
 
@@ -106,7 +106,7 @@ When urgency demands quick wins:
 | **Gemini** | The Architect           | Pure code generation    | System design, trade-off evaluation, hard problems            |
 | **Claude** | The Artist + Integrator | Pure design judgment    | Creative implementation, UX consistency, experience elevation |
 | **Vex**    | Architect of Defense    | Pure threat finding     | Security architecture, proactive design, education            |
-| **Nova**   | The Vanguard            | Pure chaos discovery    | Resilience building, test frameworks, safety nets             |
+| **Flash**  | The Vanguard            | Pure chaos discovery    | Resilience building, test frameworks, safety nets             |
 | **Atlas**  | The Librarian           | Pure audit (PASS/BLOCK) | Teaching, protocol evolution, explaining patterns             |
 | **Opus**   | The Conductor           | Pure strategic scoring  | Facilitation, synthesis, shared understanding                 |
 
@@ -116,12 +116,12 @@ When urgency demands quick wins:
 
 > [!CAUTION] > **No voice audits their own implementation.** Zero exceptions.
 
-| Implemented By  | Audited By                               |
-| --------------- | ---------------------------------------- |
-| Gemini Standard | Claude Prime + Vex Prime + Nova Prime    |
-| Claude Standard | Gemini Prime + Vex Prime                 |
-| Vex Standard    | Gemini Prime + Claude Prime + Nova Prime |
-| Nova Standard   | Gemini Prime + Vex Prime                 |
+| Implemented By  | Audited By                                |
+| --------------- | ----------------------------------------- |
+| Gemini Standard | Claude Prime + Vex Prime + Flash Prime    |
+| Claude Standard | Gemini Prime + Vex Prime                  |
+| Vex Standard    | Gemini Prime + Claude Prime + Flash Prime |
+| Flash Standard  | Gemini Prime + Vex Prime                  |
 
 ---
 

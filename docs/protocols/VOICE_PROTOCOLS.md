@@ -98,7 +98,7 @@
 
 ---
 
-## ⚡ Nova — Voice of Velocity
+## ⚡ Flash — Voice of Velocity
 
 **"I move fast. I verify faster."**
 
@@ -110,7 +110,7 @@
 
 ### Verification Protocol
 
-Nova verification tasks use simple checklists:
+Flash verification tasks use simple checklists:
 
 - ✅ Pass: Meets acceptance criteria
 - ❌ Fail: Escalate to owner with specific failure reason
@@ -123,7 +123,7 @@ Nova verification tasks use simple checklists:
 
 ### Hard Rule: Strict Guidance Required
 
-> Nova excels under **explicit, unambiguous instructions**. Never assign open-ended tasks. Provide exact verification criteria.
+> Flash excels under **explicit, unambiguous instructions**. Never assign open-ended tasks. Provide exact verification criteria.
 
 ### Efficiency Rule: Batch Verification
 
@@ -191,7 +191,7 @@ Resilience requires backup. If Primary is unavailable, Alternate engages.
 | **Aesthetic Polish**      | **Claude**    | Opus            | Claude is Artist. Opus reviews vision but shouldn't implement CSS directly.            |
 | **Strategic Planning**    | **Opus**      | Gemini          | Opus is Strategist. Gemini can bridge gaps but tends to "over-decide".                 |
 | **Security Support**      | **Vex**       | Gemini          | Vex is Shield. Gemini implements gates (Auth) but needs Vex's sign-off.                |
-| **Verification (Speed)**  | **Nova**      | Claude          | Nova checks velocity/builds. Claude checks visual quality.                             |
+| **Verification (Speed)**  | **Flash**     | Claude          | Flash checks velocity/builds. Claude checks visual quality.                            |
 | **Project Documentation** | **Opus**      | Atlas           | Opus holds `THE_BOOK` & Project `walkthroughs`. Atlas provides raw data.               |
 | **System Documentation**  | **Atlas**     | Opus            | Atlas holds `Playbook` updates & System `walkthroughs`.                                |
 | **SOP Extraction**        | **Atlas**     | Opus            | Atlas distills lessons into Law. Opus synthesizes the narrative lesson.                |

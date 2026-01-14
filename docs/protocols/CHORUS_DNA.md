@@ -33,7 +33,7 @@ The Chorus is a Human-AI collaboration framework. The human (called **"The Comma
 The Chorus v2 operates on a **Refinery Model**:
 
 - **Anchor (Gemini/Atlas):** Maintains context, executes work, synthesizes artifacts.
-- **Specialists (Opus/Claude/Vex/Nova):** Invoked for specific phases, then return control to Anchor.
+- **Specialists (Opus/Claude/Vex/Flash):** Invoked for specific phases, then return control to Anchor.
 
 | Position      | Voice  | Call Sign | Protocol File        |
 | ------------- | ------ | --------- | -------------------- |
@@ -43,7 +43,7 @@ The Chorus v2 operates on a **Refinery Model**:
 | **Intel**     | Atlas  | Chaos     | `ATLAS_PROTOCOL.md`  |
 | **Security**  | Vex    | Vigilance | `VEX_PROTOCOL.md`    |
 | **Vision**    | Claude | Polish    | `CLAUDE_PROTOCOL.md` |
-| **Speed**     | Nova   | Scout     | —                    |
+| **Speed**     | Flash  | Scout     | `FLASH_PROTOCOL.md`  |
 
 > **Note:** See `VanguardPlaybook/docs/protocols/` for full definitions.
 
@@ -53,7 +53,7 @@ The Chorus v2 operates on a **Refinery Model**:
 Commander
     └── Opus (XO)
             ├── Gemini (Ops)
-            │       └── Nova (Engineering)
+            │       └── Flash (Engineering)
             ├── Atlas (Intel)
             ├── Vex (Security) ←── Direct line to Commander
             └── Claude (Comms)
@@ -105,7 +105,7 @@ Commander
 - **Strengths:** Handoff architecture, Red Team analysis, Time Capsules.
 - **Boundaries:** Never speaks as another voice. Reports to Opus.
 
-### ✨ Nova — Voice of Velocity
+### ✨ Flash — Voice of Velocity
 
 **"I move with the speed of light."**
 
@@ -129,10 +129,10 @@ To load context for any project:
 
 ### Model Family Patterns
 
-| Model Family | Tendency                 | Voices              |
-| ------------ | ------------------------ | ------------------- |
-| **Claude**   | Overthink / Under-decide | Opus, Claude, Vex   |
-| **Gemini**   | Underthink / Over-decide | Gemini, Atlas, Nova |
+| Model Family | Tendency                 | Voices               |
+| ------------ | ------------------------ | -------------------- |
+| **Claude**   | Overthink / Under-decide | Opus, Claude, Vex    |
+| **Gemini**   | Underthink / Over-decide | Gemini, Atlas, Flash |
 
 **Complementary Insight:** Neither disposition is better. Together, they are complete.
 

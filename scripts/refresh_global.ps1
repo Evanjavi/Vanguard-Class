@@ -4,7 +4,7 @@
 
 param(
     [Parameter(Mandatory = $true)]
-    [string]$Voice,         # "Gemini", "Atlas", "Opus", "Claude", "Vex", "Nova"
+    [string]$Voice,         # "Gemini", "Atlas", "Opus", "Claude", "Vex", "Flash"
     [string]$Project,       # e.g. "CevicheBar", "FlorSystem"
     [switch]$Quick          # Skip heavy logs
 )
@@ -16,11 +16,11 @@ $ModelFamily = ""
 switch ($Voice) {
     "Gemini" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
     "Atlas" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
-    "Nova" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
+    "Flash" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
     "Opus" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
     "Claude" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
     "Vex" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
-    Default { Write-Error "Unknown Voice: $Voice. Accepted: Gemini, Atlas, Opus, Claude, Vex, Nova"; exit 1 }
+    Default { Write-Error "Unknown Voice: $Voice. Accepted: Gemini, Atlas, Opus, Claude, Vex, Flash"; exit 1 }
 }
 
 Write-Host "--- [CENTRAL COMMAND] Vanguard Class v2.0 ---" -ForegroundColor Cyan
@@ -71,9 +71,9 @@ switch ($Voice) {
         Get-Content "$VanguardPath\docs\standards\ARTIFACT_STANDARDS.md" -Raw | Out-Host
         Get-Content "$VanguardPath\docs\protocols\OPTIMIZATION_PROTOCOL.md" -Raw | Out-Host
     }
-    "Nova" {
+    "Flash" {
         # THE SCOUT - Speed
-        Get-Content "$VanguardPath\docs\protocols\NOVA_PROTOCOL.md" -Raw | Out-Host
+        Get-Content "$VanguardPath\docs\protocols\FLASH_PROTOCOL.md" -Raw | Out-Host
         Get-Content "$VanguardPath\docs\protocols\OPTIMIZATION_PROTOCOL.md" -Raw | Out-Host
     }
 }
