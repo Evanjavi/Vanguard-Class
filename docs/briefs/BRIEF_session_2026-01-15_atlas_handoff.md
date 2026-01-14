@@ -31,7 +31,7 @@ The following identities are now legally binding across Global Playbook and Loca
 - **Rule 4 Added:** `OPERATIONAL_LOOP.md` now explicitly authorizes **Same-Agent Parallelism** (Standard + Prime of same model).
 - **Pilot Successful:** `PILOT_ATLAS_PRIME_2026-01-14.md` confirmed that Atlas Standard can invoke Atlas Prime (The Invariant) within the same session without context corruption.
 
-### C. Tooling & script Updates
+### C. Tooling & Script Updates
 
 - **`refresh_global.ps1`:**
   - Supports new names (Atlas, Vex, Flash).
