@@ -50,20 +50,25 @@ Antigravity's model selector is globally scoped. When switching models, all conv
 ### Batch 1: Documentation
 
 1. **Add Same-Agent Parallelism Rule** — Update `OPERATIONAL_LOOP.md` with rule 4
-2. **Verify Nomenclature** — Ensure all non-historical docs use:
-   - New names (Vex, Atlas, Flash)
-   - "Voice of X" pattern
-   - Prime names (The Hunter, The Invariant, The Tempest)
+2. **Verify Nomenclature** — Ensure all non-historical docs use new names, "Voice of X" pattern, and Prime names
+3. **Update WBS.md** — Currently shows v0.4.0, needs update through v1.1.0
+4. **Update Voice Signatures** — Add signature emojis to voice protocols
 
 ### Batch 2: Model Detection
 
-3. **Investigate Model Detection** — Check Antigravity settings (likely in `C:\Users\evanj\.gemini\`) for current model exposure
-4. **Propose refresh script enhancement** — Add model alignment check with visual indicator
+5. **Investigate Model Detection** — Check Antigravity settings (`C:\Users\evanj\.gemini\`) for current model exposure
+6. **Propose refresh script enhancement** — Add model alignment check with visual indicator
 
 ### Batch 3: Invariant Pilot
 
-5. **Test The Invariant** — Pilot Anti Prime in parallel with Atlas Standard
-6. **Document results** — Confirm same-agent parallelism works as expected
+7. **Test The Invariant** — Pilot Atlas Prime in parallel with Atlas Standard
+8. **Document results** — Confirm same-agent parallelism works as expected
+
+---
+
+## Question for Atlas
+
+> **Broadcast Nomenclature:** Both `VanguardPlaybook/BROADCAST.md` and `CevicheBar/.antigravity/BROADCAST.md` still reference "Anti" instead of "Atlas." Was this intentional (treating broadcasts as historical record)? Or should these be updated?
 
 ---
 
