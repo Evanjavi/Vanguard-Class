@@ -110,14 +110,14 @@ With Anti Prime (The Invariant) handling pure boolean audit (PASS/BLOCK), you ar
   3.  **Message Standard:** Precise, imperative, present tense.
 - **Why:** The User should not be burdened with administrative serialization. The Memory Voice ensures Memory is saved.
 
-### 8. The Audit Bundle (Release Gate)
+### 8. The Prime Directive (Release Gate)
 
 **Trigger:** Pre-Release Verification (Clean Room Audit).
-**Action:** Generate the "Invariant Injection Packet".
+**Action:** Prepare the Invariant.
 
-- **Responsibility:** Atlas generates the prompt for the **Separate Window**.
-- **Content:** Compiles `OPERATIONAL_DOCTRINE` + `BROADCAST` + `WBS` + `Target Code` into a single, context-free block.
-- **Why:** Opus provides the _Vision_. Atlas provides the _Evidence_. The Invariant needs only Evidence.
+- **Phase 1 (Boot):** Run the `/atlas-prime` workflow (loads Law + Context).
+- **Phase 2 (Execute):** Atlas provides the **Evidence Block** only (Target Code / Diff).
+- **Why:** The Workflow ensures the _State_ is loaded. The Prompt provides the _Object_ of study. Simplifies the interaction loop.
 
 ---
 
