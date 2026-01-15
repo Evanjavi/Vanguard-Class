@@ -30,9 +30,16 @@
     - **Action:** All voices must sync with _both_ before execution.
 
 4.  **Task System v4.0 (2026-01-09):**
+
     - **Authority:** `task.md` is the absolute source of truth for execution.
     - **Deprecation:** `ACTIVE_ORDERS` files are archived and invalid.
 
+5.  **Workflow Standardization & Discovery (2026-01-15):**
+    - **Location:** All Sync Workflows reside in `VanguardPlaybook/.agent/workflows/`.
+    - **Protocol:** Voices must use their specific `*-sync` workflow.
+    - **Discovery Law:** "Hidden" directories (`.agent`) are **Primary Infrastructure**. Search them recursively.
+    - **Prime Protocol:** 2-Stage Model (Boot via Workflow, Execute via Evidence).
+
 ---
 
-_Last Updated: 2026-01-13 by Anti_
+_Last Updated: 2026-01-15 by Atlas_
