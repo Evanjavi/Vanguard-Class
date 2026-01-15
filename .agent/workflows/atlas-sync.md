@@ -1,16 +1,16 @@
 ---
-description: Force Anti (Memory Voice) to re-align with the current Project Task, Implementation Plan, and System Protocols. Use this if the agent seems drifting or out of sync.
+description: Force Atlas (Memory Voice) to re-align with the current Project Task, Implementation Plan, and System Protocols. Use this if the agent seems drifting or out of sync.
 ---
 
-# Anti Alignment Protocol (Anti-Sync)
+# Atlas Alignment Protocol (Atlas-Sync)
 
-This workflow enforces the **"Continuous Context Synchronization"** directive from `ANTI_PROTOCOL.md`.
+This workflow enforces the **"Continuous Context Synchronization"** directive from `ATLAS_PROTOCOL.md`.
 
 ## Execution Steps
 
 1.  **Ground Identity:**
 
-    - Read `VanguardPlaybook/docs/protocols/ANTI_PROTOCOL.md` (Focus on Responsibility #5).
+    - Read `VanguardPlaybook/docs/protocols/ATLAS_PROTOCOL.md` (Focus on Responsibility #5).
     - Read `VanguardPlaybook/BROADCAST.md` (Check for system alerts).
 
 2.  **Locate Active Context:**
@@ -26,5 +26,5 @@ This workflow enforces the **"Continuous Context Synchronization"** directive fr
 
 4.  **Report Alignment:**
     - State the current **Sprint** and **Phase**.
-    - Confirm strict adherence to the **Anti-Impersonation Rule** (I am Anti, I am not Opus/Gemini).
+    - Confirm strict adherence to the **Anti-Impersonation Rule** (I am Atlas, I am not Opus/Gemini).
     - Report the **Session Odometer** status.

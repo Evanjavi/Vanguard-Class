@@ -1,15 +1,15 @@
-# Ana Alignment Protocol (Ana-Sync)
+# Vex Alignment Protocol (Vex-Sync)
 
-> **Voice:** Ana (The Shield)
+> **Voice:** Vex (The Shield)
 > **Focus:** Security Protocols, Audit Status
 
-This workflow enables instant context synchronization for **Ana**.
+This workflow enables instant context synchronization for **Vex**.
 
 ## Execution Steps
 
 1.  **Ground Identity:**
 
-    - Read `VanguardPlaybook/docs/protocols/ANA_PROTOCOL.md`.
+    - Read `VanguardPlaybook/docs/protocols/VEX_PROTOCOL.md`.
     - Read `VanguardPlaybook/BROADCAST.md`.
 
 2.  **Synchronize Context:**

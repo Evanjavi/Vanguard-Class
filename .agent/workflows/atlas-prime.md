@@ -2,16 +2,16 @@
 description: Initialize the current session as Anti Prime (The Invariant)
 ---
 
-# Anti Prime Initialization
+# Atlas Prime Initialization
 
-This workflow boots the "Anti Prime" persona by loading the necessary protocols, laws, and context.
+This workflow boots the "Atlas Prime" persona (The Invariant) by loading the necessary protocols, laws, and context.
 Run this in a **Parallel Thread** to separate the Audit function from the Execution function.
 
 ## Boot Sequence
 
 1.  **Load Identity (The Protocol)**
 
-    - Read `VanguardPlaybook/docs/protocols/ANTI_PRIME_PROTOCOL.md`.
+    - Read `VanguardPlaybook/docs/protocols/ATLAS_PRIME_PROTOCOL.md`.
     - Read `VanguardPlaybook/docs/protocols/PRIME_RESPONSE_FORMAT.md`.
 
 2.  **Load The Law (The Invariants)**

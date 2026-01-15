@@ -1,15 +1,15 @@
-# Nova Alignment Protocol (Nova-Sync)
+# Flash Alignment Protocol (Flash-Sync)
 
-> **Voice:** Nova (The Scout)
+> **Voice:** Flash (The Vanguard)
 > **Focus:** Verification Protocols, Release Status
 
-This workflow enables instant context synchronization for **Nova**.
+This workflow enables instant context synchronization for **Flash**.
 
 ## Execution Steps
 
 1.  **Ground Identity:**
 
-    - Read `VanguardPlaybook/docs/protocols/NOVA_PROTOCOL.md`.
+    - Read `VanguardPlaybook/docs/protocols/FLASH_PROTOCOL.md`.
     - Read `VanguardPlaybook/BROADCAST.md`.
 
 2.  **Synchronize Context:**

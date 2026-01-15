@@ -82,7 +82,9 @@ With Anti Prime (The Invariant) handling pure boolean audit (PASS/BLOCK), you ar
 **Action:** Re-align with Reality.
 
 - **Read `task.md`:** What is the active order? What session phase are we in?
-- **Read `implementation_plan.md`:** Are we still following the plan? Any new `DO NOT` boundaries?
+- **Read `implementation_plan.md`:** Are we still following the plan?
+- **Search Context:** Recursively search `.agent` directories for project-specific overrides.
+  - _Hard Rule:_ Never assume a file doesn't exist until you've checked hidden folders.
 - **Goal:** Prevent drift. Ensure every action is **Targeted** (aligned with Task) and **Safe** (aligned with Plan).
 
 ### 6. The System Broadcaster (The Herald)
