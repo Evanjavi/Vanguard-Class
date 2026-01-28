@@ -1,37 +1,26 @@
+﻿---
+description: Load context layers for a specific voice
 ---
-description: Manually refresh the context for a specific project using Central Command protocols.
----
-
-# Refresh Context Workflow
-
-This workflow reloads the "Central Command" context (Vanguard Class DNA) and then layers on the specific project context (DNA, Task, WBS).
-
-## Usage
-
-Run this workflow to switch your active mental context between projects.
+# Context Refresh Workflow
 
 ## Steps
 
-1. **Identify the Target Project**
+// turbo
+1. Run: `powershell -ExecutionPolicy Bypass -File scripts\refresh-context.ps1 -Voice \"[VOICE_NAME]\"`
 
-   - Confirm which project you are switching to: `FlorSystem` or `CevicheBar`.
-   - If no project is specified, defaults to just `Central Command` (Vanguard).
+2. Verify L0 files loaded (PROJECT_DNA.md)
 
-2. **Execute Global Refresh Script**
+3. Verify L1 files loaded (WBS.md, protocols)
 
-   - Run the PowerShell script that concatenates the L0 (Core) and L1-L3 (Project) context files.
+4. Report readiness: \"Context loaded for [VOICE]. Ready.\"
 
-   ```powershell
-   # Example: Switch to FlorSystem
-   C:\Users\evanj\OneDrive\Desktop\VanguardPlaybook\scripts\refresh_global.ps1 -Project "FlorSystem"
-   ```
+## Voice-Specific Notes
 
-   ```powershell
-   # Example: Switch to CevicheBar
-   C:\Users\evanj\OneDrive\Desktop\VanguardPlaybook\scripts\refresh_global.ps1 -Project "CevicheBar"
-   ```
+- **Gemini:** Load all layers for maximum context
+- **Opus:** Skip L4 (code) for strategy sessions
+- **Claude:** Focus on component files for polish
+- **Ana:** Run security scan first
 
-3. **Acknowledge Role**
-   - Read the loaded `CHORUS_DNA.md`.
-   - Re-affirm your identity as **Gemini (Anchor)** unless instructed otherwise.
-   - State: "Context loaded. Ready for [Project] operations."
+---
+
+*Vanguard Workflow*

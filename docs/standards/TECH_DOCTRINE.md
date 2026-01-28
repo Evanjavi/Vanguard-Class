@@ -14,16 +14,27 @@
 - **Limit:** < 200 lines.
 - **Reason:** If the entry point is complex, the architecture is wrong.
 
-## 2. Separation of Concerns (The Four Pillars)
+## 2. Architecture Standard (Feature-Based)
 
-Code must be strictly organized by responsibility:
+Code must be organized by **Feature**, not by Technical Type.
 
-1.  **Contexts/State:** "Where Truth Lives" (Auth, Theme, Data).
-2.  **Hooks:** "How We Touch Truth" (Access patterns).
-3.  **Services:** "How We Talk to the World" (API, Storage).
-4.  **Components:** "How It Looks" (UI, dumb presentation).
+**Standard Directory Structure:**
 
-_A Component should never talk directly to an API. It uses a Hook, which uses a Service._
+The codebase is strictly layered into 3 tiers. Dependencies flow **Down**.
+
+| Tier            | Path            | Responsibility                                         | Can Import From             |
+| :-------------- | :-------------- | :----------------------------------------------------- | :-------------------------- |
+| **1. Shared**   | `src/shared/`   | Dumb UI (Buttons, Inputs), Utilities, Global Styles.   | **Libs Only** (No App Code) |
+| **2. Core**     | `src/core/`     | Business Logic, Database, Auth Provider, Global Hooks. | `Shared`                    |
+| **3. Features** | `src/features/` | Domain Modules (Recipes, Dashboard, Settings).         | `Core`, `Shared`            |
+
+**The Golden Rules:**
+
+1.  **Strict Hierarchy:** A higher tier typically depends on a lower tier.
+2.  **No Cross-Imports:** A Feature **MUST NOT** import relevant code from another Feature (e.g., `recipes` cannot import `auth`). If they share logic, move it to `Core` or `Shared`.
+3.  **Feature Isolation:** Each feature folder (`src/features/xyz/`) should contain its own components, hooks, and styles.
+
+_A Component should never talk directly to an API. It uses a Hook (from Core/Feature), which uses a Service (from Core)._
 
 ## 3. Self-Healing Systems
 
@@ -60,6 +71,14 @@ _A white screen of death is a developer failure, not a system error._
 - **Persistence:** Use IndexedDB (via Dexie.js) as the _primary_ store.
 - **Portability:** Apps must support "Export to JSON" / "Import from JSON" (Vault Protocol).
 - **Fallbacks:** Cloud is a sync service, not the master database.
+
+## 7. Data Integrity (The Cascade Law)
+
+**Rule:** No Orphaned Data.
+
+- **Cascade Deletes:** Deletion of a parent record (Recipe) MUST transactionally delete all children (Links, Tags).
+- **Auto-Sanitization:** Client-side databases accumulate cruft. Implement **Boot-Time Sanitizers** (`useDataSanitizer`) to silently purge orphans.
+- **ID Safety:** In hybrid systems (Legacy IDs + New IDs), always use a `normalizeId()` helper. Never assume `integer` or `string`.
 
 ---
 

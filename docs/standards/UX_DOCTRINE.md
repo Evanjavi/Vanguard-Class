@@ -40,6 +40,21 @@
 - **Hierarchy:** `h1` > `h2` > `h3` must be visually distinct by size, weight, or color.
 - **Readability:** max-width for text blocks (65 chars is ideal).
 
+## 5. Navigation Patterns
+
+**Rule:** Depth over Breadth (The Accordion Law).
+
+- **Pattern:** For deep hierarchies (Collections > Recipes), prefer **In-Place Expansion** (Accordions) over page navigation.
+- **Reason:** Preserves context. Reduces cognitive load of "going back."
+
+## 6. Visual Consistency
+
+**Rule:** Same Action = Same Button.
+
+- **Violation:** "Rainbow Buttons" (New Recipe = Red, New Guide = Purple).
+- **Correction:** All "Create/Primary" actions must share the exact same visual class (`btn-primary`).
+- **Trust:** Consistency creates trust. Inconsistency implies separate apps.
+
 ---
 
 _Vanguard Class — Central Command_

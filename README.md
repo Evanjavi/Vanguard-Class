@@ -8,10 +8,10 @@
 
 ## 🏗️ Active Projects
 
-| Project                         | Description               | Status   |
-| ------------------------------- | ------------------------- | -------- |
-| **[FlorSystem](../FlorSystem)** | Personal Operating System | `v0.996` |
-| **[CevicheBar](../CevicheBar)** | Recipe Management System  | `v0.2.0` |
+| Project                         | Description               | Status              |
+| ------------------------------- | ------------------------- | ------------------- |
+| **[FlorSystem](../FlorSystem)** | Personal Operating System | `v0.996`            |
+| **[CevicheBar](../CevicheBar)** | Recipe Management System  | `v1.6.7` (Beta MVP) |
 
 ---
 
