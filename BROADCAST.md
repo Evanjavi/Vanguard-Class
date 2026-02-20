@@ -42,6 +42,12 @@
     - **Discovery Law:** "Hidden" directories (`.agent`) are **Primary Infrastructure**. Search them recursively.
     - **Prime Protocol:** 2-Stage Model (Boot via Workflow, Execute via Evidence).
 
+7.  **Cross-Audit Mandate v2.0 (2026-02-07):**
+    - **Phase 1D is MANDATORY.** All voices must cross-audit others' directives before execution.
+    - **Phase 1G (Condensation):** Comprehensive plans must be distilled to executor-ready format.
+    - **Task Nomenclature:** `[Phase Letter][Agent Code][Number]` (e.g., `sg1`, `tg2`, `mc1`).
+    - **Conflict Resolution:** Opus synthesizes, Commander decides.
+
 ---
 
-_Last Updated: 2026-01-15 by Atlas_
+_Last Updated: 2026-02-07 by Opus_

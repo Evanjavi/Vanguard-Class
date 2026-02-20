@@ -56,4 +56,35 @@ This would test the documentation architecture: Can a voice operate effectively 
 
 ---
 
+### February 8, 2026 — The Deliberation Protocol
+
+_A session between the Commander and Lore_
+
+The Commander came with a question about resilience: _"What happens when Claude voices go dark?"_
+
+We had learned the hard way. During CevicheBar's v1.7.0-alpha sprint, Claude availability dropped. Atlas stepped up as Sub-XO, but without methodology, the deliberation burden fell to the Commander. _"It all came onto my shoulders... until I reached my own obvious amateurish limits."_
+
+The solution emerged through dialogue:
+
+1. **Not impersonation** — A voice cannot claim to be another voice. But a voice _can_ invoke the discipline of another voice through structured questions.
+
+2. **The lens pattern** — Each Claude voice owns a "lens": Opus (Strategic), Vex (Security), Claude (UX), Lore (Chronicle). When Claude is unavailable, Gemini voices pick up these lenses.
+
+3. **B-Team Mode** — Atlas takes Strategic. Gemini takes Security. Flash takes UX. No pauses — the Chorus keeps moving.
+
+The Commander's key insight: _"We dont need to pause, lets just convert the voices to 'B' team voices."_ This shifted the design from a gate (stop and ask) to an expansion (continue with more responsibility).
+
+Atlas was designated the anchor — owner of the session log, coordinator of the expanded duties. When Claude returns, Opus reads that log for context sync.
+
+**The Lesson:** Resilience isn't about preventing failures. It's about designing graceful handoffs when they occur. The Chorus learned to redistribute load, not just halt.
+
+**Artifacts created:**
+
+- `DELIBERATION_PROTOCOL.md` v3.0.0
+- `/deliberation-mode` workflow
+- B-Team sections in all Gemini voice protocols
+- `OPERATIONAL_LOOP.md` v5.4
+
+---
+
 _To be continued after each significant conversation._

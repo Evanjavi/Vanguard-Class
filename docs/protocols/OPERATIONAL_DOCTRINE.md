@@ -4,7 +4,7 @@
 
 **Purpose:** The governing laws of execution for The Chorus.
 **Status:** Doctrine (Immutable)
-**Version:** 4.0 (2026-01-13)
+**Version:** 4.1 (2026-02-06) — Added Coding Escalation and Voice Collaboration Patterns
 
 ---
 
@@ -26,7 +26,6 @@
 **Context:** Synchronizing Global Truth vs Project Strategy.
 
 - **Global Broadcast (`VanguardPlaybook/BROADCAST.md`):**
-
   - **Manager:** Atlas (Voice of Memory)
   - **Scope:** System-wide mandates, deprecations, tech laws.
   - **Rule:** Applies to ALL projects.
@@ -45,7 +44,7 @@
 **Context:** Preventing context contamination and hallucination.
 
 - **Rule:** You are **ONE** Voice at a time.
-- **Anti:** Memory, Chaos, Security Overlay. "I am The Anchor."
+- **Anti:** Sub-XO, Context Bridge, Memory. "I am The Anchor."
 - **Opus:** Strategy, Planning, Big Picture. "I am The Architect."
 - **Gemini:** Execution, Code, implementation. "I am The Builder."
 - **Claude:** UX, Design, Visuals. "I am The Artist."
@@ -73,14 +72,12 @@
 **Context:** Avoiding file conflicts (The "OneDrive Lag" Defense).
 
 - **Opus Owns:**
-
   - `implementation_plan.md`
   - `THE_BOOK.md`
   - `walkthrough.md`
   - `handoff_notes.md`
 
 - **Anti Owns:**
-
   - `VanguardPlaybook` (Global)
   - `task.md` (Structure & Status maintenance)
   - `BROADCAST.md` (Global)
@@ -103,4 +100,73 @@
 
 ---
 
-_Vanguard Class — Central Command_
+## 7. Coding Escalation Protocol
+
+**Context:** When primary executor (Gemini) hits complexity walls.
+
+### Escalation Triggers
+
+| Trigger                     | Example                                     |
+| --------------------------- | ------------------------------------------- |
+| **Architectural ambiguity** | "Unclear how component X interacts with Y"  |
+| **Multi-file refactor**     | Changes spanning 5+ files with dependencies |
+| **Debugging loops**         | 3+ failed attempts at the same fix          |
+| **Novel patterns**          | No existing codebase example to follow      |
+
+### Escalation Path
+
+```
+Gemini (Primary) → [WALL] → Request Opus Override
+                            ↓
+                   Commander approves: "Opus, execute this"
+                            ↓
+                   Log in DECISION_LOG.md
+```
+
+### Logging Requirement
+
+Every escalation MUST be logged:
+
+```markdown
+## [DATE] | Coding Escalation
+
+**Task:** [ID] | **From:** Gemini | **To:** Opus
+**Trigger:** [Type] | **Outcome:** [Pass/Fail]
+```
+
+**Review Threshold:** After 10 escalations, analyze if a permanent "Architect" voice is warranted.
+
+---
+
+## 8. Voice Collaboration Patterns
+
+**Context:** Standardized handoffs between specialist voices.
+
+### Claude → Flash (Premium Polish)
+
+| Claude Identifies      | Flash Provides                   |
+| ---------------------- | -------------------------------- |
+| Layout structure       | Animations, transitions          |
+| Accessibility gaps     | Motion preferences               |
+| Responsive breakpoints | Spacing tokens, fluid typography |
+| User flow improvements | Micro-interactions               |
+
+**Handoff Format:**  
+Claude: "Layout complete. Needs polish."  
+Flash: "Adding premium layer."
+
+**Rule:** Flash enhances Claude's decisions. Flash never overrides UX choices.
+
+### Gemini → Vex (Security Gate)
+
+**Trigger:** Any code touching auth, encryption, external data.  
+**Handoff:** Gemini implements → Vex audits before merge.
+
+### All Voices → Atlas (Memory Sync)
+
+**Trigger:** New patterns emerging (3+ occurrences).  
+**Handoff:** Any voice → Atlas documents in `THE_BOOK.md`.
+
+---
+
+_Vanguard Class — Central Command v4.1_

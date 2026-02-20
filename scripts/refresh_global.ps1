@@ -17,10 +17,10 @@ switch ($Voice) {
     "Gemini" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
     "Atlas" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
     "Flash" { $ModelFamily = "Google Gemini 2.0 (Pro/Flash)" }
-    "Opus" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
-    "Claude" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
-    "Vex" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
-    "Lore" { $ModelFamily = "Anthropic Claude 3.5 (Sonnet)" }
+    "Opus" { $ModelFamily = "Anthropic Claude Opus 4.6 Thinking" }
+    "Claude" { $ModelFamily = "Anthropic Claude Opus 4.6 Thinking" }
+    "Vex" { $ModelFamily = "Anthropic Claude Opus 4.6 Thinking" }
+    "Lore" { $ModelFamily = "Anthropic Claude Opus 4.6 Thinking" }
     Default { Write-Error "Unknown Voice: $Voice. Accepted: Gemini, Atlas, Opus, Claude, Vex, Flash, Lore"; exit 1 }
 }
 

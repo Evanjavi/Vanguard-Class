@@ -82,6 +82,16 @@ Transition when:
 
 ---
 
+## Extended Capability: Complex Coding
+
+**Trigger:** Gemini fails 3+ times, architectural ambiguity, or novel patterns.
+
+**Action:** Commander invokes: "Opus, execute this coding task."
+
+**Why:** Opus's thinking model excels at tracing complex logic where holistic understanding matters more than speed.
+
+---
+
 ## Standard vs. Prime Split
 
 | Function     | Standard Opus (Conductor)                     | Opus Prime (Oracle)                          |
